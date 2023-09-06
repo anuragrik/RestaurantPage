@@ -1,0 +1,43 @@
+import contactImage from "./contactImage.jpg";
+import phoneIconImage from "./phoneIcon.png";
+import addressIconImage from "./addressIcon.png";
+
+export function createContact(tabItem){
+    let contactBlock = document.createElement("div");
+    contactBlock.classList.add("contactBlock");
+    tabItem.appendChild(contactBlock);
+
+    let phoneBlock = document.createElement("div");
+    phoneBlock.classList.add("phoneBlock");
+    contactBlock.appendChild(phoneBlock);
+    let phone = document.createElement("div");
+    let phoneIcon = document.createElement("img");
+    phoneIcon.setAttribute("src", phoneIconImage);
+    phoneIcon.setAttribute("href", "https://icons8.com/icon/47813/phone")
+    phoneIcon.classList.add("icon");
+    phone.innerText = "123 456 789";
+    phoneBlock.appendChild(phoneIcon);
+    phoneBlock.appendChild(phone);
+    
+
+
+    let addressBlock = document.createElement("div");
+    addressBlock.classList.add("addressBlock");
+    contactBlock.appendChild(addressBlock);
+    let address = document.createElement("div");
+    let addressIcon = document.createElement("img");
+    addressIcon.setAttribute("src", addressIconImage);
+    addressIcon.classList.add("icon");
+    addressIcon.setAttribute("href", "https://icons8.com/icon/53430/address")
+    address.innerText = "Village Hidden In The Leaves, Konoha";
+    addressBlock.appendChild(addressIcon);
+    addressBlock.appendChild(address);
+    
+
+    let addressImage = document.createElement("img");
+    addressImage.setAttribute("src", contactImage);
+    addressImage.classList.add("contact","img");
+    contactBlock.appendChild(addressImage)
+
+    return;
+}

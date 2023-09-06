@@ -1,0 +1,152 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #475569;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.headerBlock{
+    background-color: #94a3b8;
+    height: 150px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs{
+    background-color: #94a3b8;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button{
+    background-color: #94a3b8;
+    height: 50px;
+    width: 120px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+button:hover{
+    background-color: #94a3b8;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+.tabItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.homeBlock{
+    display: none;
+    position: relative;
+    height: 90vh;
+    width: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    padding: 30px;
+    padding-top: 100px;
+    opacity: 1;
+}
+.homeBlock::before {    
+    content: "";
+    background-image: url("./bgimagehome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+.restaurantDesc{
+    position: relative;
+    text-align: center;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.menu.item{
+    height: 200px;
+    width: 300px;
+    border: 1px solid white;
+}
+.menu.item:hover{
+    background-color: white;
+    opacity: 0.8;
+}
+
+.menuBlock{
+    display: none;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 2em;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    color: antiquewhite;
+    font-size: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: none;
+    text-decoration: none;
+}
+.menuItemOne, .menuItemTwo, .menuItemThree, .menuItemFour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.itemHead{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact.image{
+    height: 300px;
+    width: 600px;
+}
+
+.icon{
+    height: 40px;
+    width: 40px;
+}
+
+.phoneBlock, .addressBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactBlock{
+    display: none;
+    flex-direction: column;
+    gap: 2em;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    color: antiquewhite;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: none;
+    text-decoration: none;
+}
